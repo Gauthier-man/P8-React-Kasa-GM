@@ -1,0 +1,48 @@
+@use "../scss/variable.scss" as *;
+
+.banner{
+    position: relative;
+     padding-inline: 2rem; /*padding sur les côtés */
+    background-image: url("./background_image.png");
+    min-height: 160px;
+    /* padding-inline: 2rem; */
+    margin: auto;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-tertiary;
+    /* Image */
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    &::before {
+        position: absolute;
+        content: "";
+        /* left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; */
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 1rem;
+    }
+    
+}
+
+
+
+.banner-content {
+    position: relative;
+    z-index: 2; /* place le contenu au-dessus de l'overlay */
+    text-align: center; /* centre le texte */
+    & h1 {
+        text-shadow: 
+            -1px -1px 0 #000,  
+             1px -1px 0 #000,
+            -1px  1px 0 #000, 
+             1px  1px 0 #000; /* Contour noir autour du texte */
+    }
+}
+

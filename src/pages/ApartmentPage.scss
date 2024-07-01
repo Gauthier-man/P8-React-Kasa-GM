@@ -1,0 +1,13 @@
+@use "../scss/variable.scss" as *;
+
+.apartment-page {
+    color: $color-primary;
+   
+
+
+        .apartment__description__area {
+            display: flex;
+            gap: 5rem;
+        }
+
+}

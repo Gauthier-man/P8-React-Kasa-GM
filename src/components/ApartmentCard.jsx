@@ -1,15 +1,16 @@
 import React from 'react'
-import "./Apartment.scss"
+import "./ApartmentCard.scss"
 import {Link} from "react-router-dom";
 
-function Apartment() {
+function ApartmentCard() {
   return (
+    <Link to="/flat">
     <div className="apartment">
-      <Link to="/flat">
       <div className="apartment__subtitle">Titre de la location</div>
+      </div>
       </Link>
-    </div>
+   
   )
 }
 
-export default Apartment
+export default ApartmentCard

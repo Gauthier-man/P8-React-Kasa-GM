@@ -1,0 +1,28 @@
+@use "../scss/variable.scss" as *;
+
+
+.about__container {
+    padding-inline: 3rem;
+
+}
+
+.about__background {
+    position: relative;
+    padding-inline: 2rem; /*padding sur les côtés */
+   background-image: url("./image_background_about.png");
+   min-height: 160px;
+   /* padding-inline: 2rem; */
+   margin: auto;
+   border-radius: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: $color-tertiary;
+   /* Image */
+   background-position: center;
+   background-size: cover;
+   margin-bottom: 2rem;
+   max-width: 100%;
+
+
+}

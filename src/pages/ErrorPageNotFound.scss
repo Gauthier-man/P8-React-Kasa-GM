@@ -1,0 +1,25 @@
+@use "../scss/variable.scss" as *;
+
+.error-page {
+    color: $color-primary;
+    text-align: center;
+    min-height: 74vh;
+    h1 {
+        font-size: 10rem;
+        margin-bottom: 0.5rem;
+    }
+    h2{
+        font-size: 28px;
+        font-weight: 400;
+        margin-bottom: 5rem;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        font-weight: 500;
+        text-decoration: underline;
+        margin-top: 2rem;
+      
+
+    }
+}

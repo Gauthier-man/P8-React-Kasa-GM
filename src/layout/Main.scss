@@ -2,5 +2,8 @@
     
     padding-inline: 3rem;
     margin-bottom: 3rem;
-    min-height: 70vh;
+    min-height: 78vh;
+    @media screen and (width <= 768px) {
+        padding:1rem;
+        }
 }

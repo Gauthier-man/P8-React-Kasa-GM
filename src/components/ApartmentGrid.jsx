@@ -1,16 +1,21 @@
 import React from 'react'
 import "./ApartmentGrid.scss";
-import Apartment from "./Apartment.jsx";
+import ApartmentCard from "./ApartmentCard.jsx";
+
+
 
 function ApartmentGrid() {
+  // let numberOfAvailableApartments = null;
+  // fetch("../annonces_logements.json").then(res => (res.json())).then((res) => (numberOfAvailableApartments = res.length)).catch(console.error);
   return (
     <div className="grid">
-      <Apartment /> 
-      <Apartment /> 
-      <Apartment /> 
-      <Apartment /> 
-      <Apartment /> 
-      <Apartment /> 
+      {/* Nous avons {numberOfAvailableApartments} appartements disponibles */}
+      <ApartmentCard /> 
+      <ApartmentCard /> 
+      <ApartmentCard /> 
+      <ApartmentCard /> 
+      <ApartmentCard /> 
+      <ApartmentCard /> 
     </div>
   )
 }

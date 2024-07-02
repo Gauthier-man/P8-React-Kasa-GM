@@ -3,13 +3,32 @@
 .apartment__header{
     display: flex;
     margin-bottom: 2rem;
+    gap: 1rem;
+    @media screen and (width <= 892px) {
+
+        flex-direction: column;
+    }
     .apartment__title{
         flex-grow: 1;
     }
+    .apartment__owner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media screen and (width <= 892px) {
+            flex-direction: row;
+        }
+
+    }
+
     .apartment__owner__details{
         display: flex;
         gap: 0.5rem;
         margin-left: 3rem;
+
+        @media screen and (width <= 892px) {
+            order: 1;
+        }
     }
     .apartment__owner__badge{
         background-color: $color-badge;
@@ -32,10 +51,7 @@
         }
 
     }
-    & > *  {
-        border: 1px solid $color-primary;
-
-    }
+   
     h1 {
         font-weight: 600;
         margin-block: 0;

@@ -7,6 +7,10 @@
     
     padding-bottom: 1rem;
     gap: 2rem;
+    @media screen and (width <= 892px) {
+        text-transform: uppercase;
+        font-weight: 500;
+    }
 
     & > *:first-child{
         margin-right: auto;

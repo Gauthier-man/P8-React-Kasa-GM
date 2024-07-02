@@ -8,7 +8,7 @@
     align-items: end;
     background-image: linear-gradient(to top, $color-secondary, $color-primary);
     min-width: 200px;
-    min-height: 200px;
+    min-height: 280px;
     @media screen and (width <= 768px) {
 
         .apartment {
@@ -16,6 +16,8 @@
         }
     
     }
+   
+
     & &__subtitle {
 
         width: 30%;

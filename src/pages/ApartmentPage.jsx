@@ -1,7 +1,7 @@
 import React from 'react'
 import "./ApartmentPage.scss"
-import  ApartmentDescription  from '../components/ApartmentDescription';
-import ApartmentBanner from '../components/ApartmentBanner.jsx';
+import  DescriptionPanel  from '../components/DescriptionPanel.jsx';
+import ApartmentBanner from '../components/ImageBanner.jsx';
 import ApartmentHeader from '../components/ApartmentHeader.jsx';
 
 
@@ -11,8 +11,8 @@ function ApartmentPage() {
         <ApartmentBanner />
         <ApartmentHeader />
           <div className="apartment__description__area">
-          <ApartmentDescription />
-          <ApartmentDescription />
+          <DescriptionPanel title="Description"  />
+          <DescriptionPanel title="Equipements" />
           </div>
         </div>
        

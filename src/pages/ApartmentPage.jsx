@@ -29,11 +29,12 @@ function ApartmentPage() {
   return (
     <div className="apartment-page">
       {/* selected flat: {JSON.stringify(flat)} */}
-        <ImageBanner imageUrl={flat.cover}/>
+        {/* <ImageBanner imageUrl={flat.cover}/> */}
+        <ImageBanner pictures={flat.pictures}/>
         <ApartmentHeader flat={flat}/>
           <div className="apartment__description__area">
           <DescriptionPanel title="Description" content={flat.description}  />
-          <DescriptionPanel title="Equipements" content={flat.equipments.map((eq) => (<li>{eq}</li>))}/>
+          <DescriptionPanel title="Equipements" content={flat.equipments.map((eq, i) => (<li key={i}>{eq}</li>))}/>
           </div>
         </div>
        

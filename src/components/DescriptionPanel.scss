@@ -23,7 +23,8 @@
     }
     .description__content {
         background-color: $grid-background;
-        color: $color-primary;
+        color: black;
+        font-weight: 400;
         padding: 1rem;
         border-radius: 0.7rem;
         position: relative;

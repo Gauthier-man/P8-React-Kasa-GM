@@ -11,6 +11,12 @@
     min-height: 280px;
     position: relative;
     // background-size: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+    }
 
     img {
         width: 100%;
